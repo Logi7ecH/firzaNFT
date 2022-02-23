@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./bg/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  margin-right: 1.5em;
+}
+
+.hero ul li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+.img-logo {
+  width: 55px;
+}
+
+.logo {
+  width: 125px;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+/* VIDEO LOGO */
+.vid {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./bg/bg-video.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vid-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.vid-cont h1 {
+  color: white;
+}
+
+.note {
+  width: 800px;
+  margin-top: 20px;
+  margin-right: 200px;
+}
+
+.vid-chicks {
+  width: 55%;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+/* INTRO SECTION */
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./assets/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#road-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  max-width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#road-img2 {
+  display: none;
+}
+
+#img-pc {
+  display: inline;
+}
+
+#x-pc {
+  display: inline;
+}
+
+#road-img.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.road-img img {
+  width: 900px;
+  position: relative;
+}
+
+.intro#chicks.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.road-img h2 {
+  font-size: 72px;
+  color: white;
+  text-shadow: 3px 3px #000;
+  text-align: center;
+  font-weight: 900;
+}
+
+.road-img a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.road-logo {
+  width: 512px;
+  transition: width 0.2s;
+}
+
+.road-logo:hover {
+  width: 530px;
+}
+
+.cont-road2 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* CIRCLE SOSMED */
+.outer-circle {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  /* border: 2px solid black;
+  border-radius: 50%; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(510px, 200px);
+}
+
+.circle {
+  width: 125px;
+  height: 125px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.small-logo {
+  width: 50px;
+}
+
+.circle ul li {
+  display: inline;
+}
+
+.log1 {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.log2 {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.log3 {
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
+}
+
+.outer-circle2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  /* border: 2px solid black;
+  border-radius: 50%; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  /* transform: translate(-530px, -230px); */
+}
+
+.outer-circle3 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  /* border: 2px solid black;
+  border-radius: 50%; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* transform: translate(550px, 350px); */
+}
+
+/* FAQ SECTION */
+.faq {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./bg/bg-faq.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1em;
+  padding-bottom: 5%;
+  position: relative;
+}
+
+.faq h1 {
+  font-size: 72px;
+  color: white;
+  text-shadow: 3px 3px #000;
+  text-align: center;
+  font-weight: 900;
+}
+
+.faq-acc {
+  width: 60%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: rgba(75, 163, 115, 1);
+  border-left: 20px solid;
+  border-color: rgba(10, 100, 65, 1);
+  transition: background-color 1s ease;
+}
+
+.faq-acc2 {
+  background-color: rgba(100, 210, 111, 1);
+  border-color: rgba(75, 162, 115, 1);
+  transition: all 1s;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.question h2 {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  text-shadow: 3px 3px rgb(97, 97, 97);
+  font-weight: 900;
+  color: white;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.answer p {
+  margin: 0 10px;
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.faq-acc.active .answer {
+  max-height: 100vh;
+}
+
+.faq-acc.active {
+  transition: all 1s;
+  background-color: rgba(75, 163, 115, 0.7);
+}
+
+.faq-acc.active .faq-acc2 {
+  transition: all 1s;
+  background-color: rgba(100, 210, 111, 0.85);
+}
+
+/* CURRENT TEAM */
+.team {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./bg/bg-team.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1em;
+}
+
+.team-ava {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.team h1 {
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 3px 3px #000;
+  margin-top: 1em;
+}
+
+.ava-boy {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+}
+
+.ava-boy img {
+  width: 450px;
+  border-radius: 10%;
+}
+
+.ava-girl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10%;
+}
+
+.ava-girl img {
+  width: 450px;
+  border-radius: 10%;
+}
+
+.sosmed {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5em;
+}
+
+.sosmed img {
+  width: 75px;
+  margin: 0 10px;
+}
+
+/* MEDIA QUERIES START */
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img-logo {
+    width: 35px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .vid {
+    max-height: 100vh;
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 50px;
+  }
+
+  .vid-cont {
+    position: relative;
+  }
+
+  .vid-chicks {
+    width: 280px;
+  }
+
+  .note {
+    width: 280px;
+    margin-right: 0;
+  }
+
+  .intro {
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .road-logo {
+    width: 280px;
+    transition: width 0.2s;
+  }
+
+  .road-logo:hover {
+    width: 298px;
+  }
+  #road-img2 {
+    display: inline;
+  }
+
+  #img-pc {
+    display: none;
+  }
+
+  #x-pc {
+    display: none;
+  }
+
+  #road-img {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: 0.5s;
+    display: flex;
+  }
+
+  .road-img img {
+    width: 315px;
+    height: 100%;
+  }
+
+  .road-img a {
+    font-size: 15px;
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+  }
+
+  .faq h1 {
+    font-size: 30px;
+  }
+
+  .faq-acc {
+    width: 80%;
+  }
+
+  .question h2 {
+    font-size: 0.8rem;
+  }
+
+  .answer p {
+    font-size: 0.65rem;
+  }
+
+  .team h1 {
+    font-size: 30px;
+  }
+
+  .ava-boy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    position: static;
+  }
+
+  .ava-boy img {
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .ava-girl {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    position: static;
+  }
+
+  .ava-girl img {
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .sosmed {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
+  .sosmed img {
+    width: 30px;
+    margin: 0 10px;
+  }
+
+  .team-ava {
+    flex-direction: column;
+  }
+}
