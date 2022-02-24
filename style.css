@@ -79,7 +79,7 @@ body {
 .vid-chicks {
   width: 30%;
   border-radius: 25px;
-  margin-left: 2em;
+  margin-right: 20%;
   margin-top: 20px;
 }
 
@@ -93,7 +93,7 @@ body {
 .intro {
   width: 100%;
   min-height: 100vh;
-  background-image: url(./assets/bg.png);
+  background-image: url(./bg/bg-road.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -139,12 +139,12 @@ body {
   position: relative;
 }
 
-.intro#chicks.active {
+/* .intro#chicks.active {
   filter: blur(20px);
   pointer-events: none;
   user-select: none;
   overflow: hidden;
-}
+} */
 
 .road-img h2 {
   font-size: 72px;
@@ -577,3 +577,48 @@ body {
     flex-direction: column;
   }
 }
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 20px;
+  height: 4px;
+  background: #fff;
+
+  transition: all 1s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translate(0, 0);
+}
+/* .menu-btn__burger::after {
+  transform: translateY(16px);
+} */
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  /* transform: translateX(-50px); */
+  /* background: transparent;
+  /* box-shadow: none; */
+}
+.faq-acc.active .menu-btn__burger::before {
+  transform: rotate(90deg) translate(0, 0);
+}
+
+/*  */
