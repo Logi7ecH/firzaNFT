@@ -36,12 +36,22 @@ body {
 
 .img-logo {
   width: 55px;
+  transition: width 0.25s;
+}
+
+.img-logo:hover {
+  width: 65px;
 }
 
 .logo {
   width: 125px;
   margin-top: 1em;
   margin-left: 1em;
+  transition: width 0.25s;
+}
+
+.logo:hover {
+  width: 135px;
 }
 
 /* VIDEO LOGO */
@@ -413,6 +423,11 @@ body {
 .sosmed img {
   width: 75px;
   margin: 0 10px;
+  transition: width 0.25s;
+}
+
+.sosmed img:hover {
+  width: 82px;
 }
 
 /* MEDIA QUERIES START */
@@ -425,10 +440,20 @@ body {
 
   .img-logo {
     width: 35px;
+    transition: width 0.25s;
+  }
+
+  .img-logo:hover {
+    width: 42px;
   }
 
   .logo {
     width: 60px;
+    transition: width 0.25s;
+  }
+
+  .logo {
+    width: 67px;
   }
 
   .vid {
@@ -571,6 +596,11 @@ body {
   .sosmed img {
     width: 30px;
     margin: 0 10px;
+    transition: width 0.25s;
+  }
+
+  .sosmed img:hover {
+    width: 37px;
   }
 
   .team-ava {
@@ -606,7 +636,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
-  transform: translate(0, 0);
+  transform: rotate(90deg) translate(0, 0);
 }
 /* .menu-btn__burger::after {
   transform: translateY(16px);
@@ -618,7 +648,7 @@ body {
   /* box-shadow: none; */
 }
 .faq-acc.active .menu-btn__burger::before {
-  transform: rotate(90deg) translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /*  */
