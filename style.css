@@ -149,12 +149,12 @@ body {
   position: relative;
 }
 
-/* .intro#chicks.active {
+.intro#chicks.active {
   filter: blur(20px);
   pointer-events: none;
   user-select: none;
   overflow: hidden;
-} */
+}
 
 .road-img h2 {
   font-size: 72px;
@@ -608,6 +608,255 @@ body {
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .vid {
+    background-size: cover;
+    background-position: left;
+  }
+
+  .note {
+    width: 430px;
+    margin-right: 13%;
+  }
+
+  .vid-chicks {
+    width: 300px;
+    margin-right: 10%;
+  }
+  .arrow {
+    width: 100px;
+    margin-bottom: 50%;
+  }
+
+  .intro {
+    background-size: cover;
+  }
+  .road-logo {
+    width: 450px;
+    transition: width 0.2s;
+  }
+  #road-img2 {
+    display: inline;
+  }
+
+  #img-pc {
+    display: none;
+  }
+
+  #x-pc {
+    display: none;
+  }
+  #road-img {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: 0.5s;
+    display: flex;
+  }
+
+  .road-img img {
+    width: 450px;
+    height: 100%;
+  }
+
+  .road-img a {
+    font-size: 15px;
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+  }
+  .faq h1 {
+    font-size: 50px;
+  }
+
+  .faq-acc {
+    width: 80%;
+  }
+
+  .question h2 {
+    font-size: 1rem;
+  }
+
+  .answer p {
+    font-size: 0.8rem;
+  }
+
+  .team h1 {
+    font-size: 50px;
+  }
+
+  .ava-boy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    position: static;
+  }
+
+  .ava-boy img {
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .ava-girl {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    position: static;
+  }
+
+  .ava-girl img {
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .sosmed {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
+  .sosmed img {
+    width: 30px;
+    margin: 0 10px;
+    transition: width 0.25s;
+  }
+
+  .sosmed img:hover {
+    width: 37px;
+  }
+
+  .team-ava {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .note {
+    width: 500px;
+  }
+  #road-img2 {
+    display: inline;
+  }
+
+  #img-pc {
+    display: none;
+  }
+
+  #x-pc {
+    display: none;
+  }
+  #road-img {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: 0.5s;
+    display: flex;
+  }
+
+  .road-img img {
+    width: 600px;
+    height: 100%;
+  }
+
+  .road-img a {
+    font-size: 15px;
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+  }
+  .faq h1 {
+    font-size: 75px;
+  }
+
+  .faq-acc {
+    width: 80%;
+  }
+
+  .question h2 {
+    font-size: 1.5rem;
+  }
+
+  .answer p {
+    font-size: 0.95rem;
+  }
+
+  .team h1 {
+    font-size: 75px;
+  }
+
+  .ava-boy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    position: absolute;
+  }
+
+  .ava-boy img {
+    width: 300px;
+    border-radius: 10%;
+  }
+
+  .ava-girl {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    position: absolute;
+  }
+
+  .ava-girl img {
+    width: 300px;
+    border-radius: 10%;
+  }
+
+  .sosmed {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
+  .sosmed img {
+    width: 30px;
+    margin: 0 10px;
+    transition: width 0.25s;
+  }
+
+  .sosmed img:hover {
+    width: 37px;
+  }
+}
+
+/* +- */
 .menu-btn {
   position: relative;
   display: flex;
