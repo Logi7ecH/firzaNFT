@@ -7,7 +7,8 @@
 
 html,
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -297,13 +298,13 @@ body {
   background-color: rgba(75, 163, 115, 1);
   border-left: 20px solid;
   border-color: rgba(10, 100, 65, 1);
-  transition: background-color 1s ease;
+  transition: background-color 0.25s ease;
 }
 
 .faq-acc2 {
   background-color: rgba(100, 210, 111, 1);
   border-color: rgba(75, 162, 115, 1);
-  transition: all 1s;
+  transition: all 0.25s;
 }
 
 .question {
@@ -328,7 +329,7 @@ body {
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease;
+  transition: max-height 0.25s;
 }
 
 .answer p {
@@ -345,12 +346,12 @@ body {
 }
 
 .faq-acc.active {
-  transition: all 1s;
+  transition: all 0.25s;
   background-color: rgba(75, 163, 115, 0.7);
 }
 
 .faq-acc.active .faq-acc2 {
-  transition: all 1s;
+  transition: all 0.25s;
   background-color: rgba(100, 210, 111, 0.85);
 }
 
@@ -876,7 +877,7 @@ body {
   transition: all 1s ease-in-out;
 }
 .menu-btn__burger::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 4px;
